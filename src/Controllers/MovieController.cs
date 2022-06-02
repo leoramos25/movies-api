@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using src.Database;
+using src.Dto;
 using src.Entities;
 
 namespace src.Controllers;
@@ -15,8 +17,15 @@ public class MovieController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult createMovie([FromBody] Movie movie)
+    public IActionResult createMovie([FromBody] CreateMovieDTO movieDto)
     {
+        var movie = new Movie{
+            Title = movieDto.Title,
+            Director = movieDto.Director,
+            Genre = movieDto.Genre,
+            Duration = movieDto.Duration
+        };
+
         _movieContext.movies.Add(movie);
         _movieContext.SaveChanges();
         return CreatedAtAction(nameof(findMovieById), new { id = movie.Id}, movie);
@@ -41,7 +50,7 @@ public class MovieController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult updateMovie(int id, [FromBody] Movie updatedMovie) {
+    public IActionResult updateMovie(int id, [FromBody] CreateMovieDTO updatedMovie) {
         var movie = _movieContext.movies.FirstOrDefault(movie => movie.Id == id);
 
         if (movie == null) {

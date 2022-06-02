@@ -4,15 +4,6 @@ namespace src.Entities;
 
 public class Movie
 {
-    public Movie(int id, string title, string director, string genre, int duration)
-    {
-        Id = id;
-        Title = title;
-        Director = director;
-        Genre = genre;
-        Duration = duration;
-    }
-
     [Key]
     [Required]
     public int Id { get; set; }
