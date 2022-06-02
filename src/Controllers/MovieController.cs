@@ -39,4 +39,36 @@ public class MovieController : ControllerBase
 
         return Ok(movie);
     }
+
+    [HttpPut("{id}")]
+    public IActionResult updateMovie(int id, [FromBody] Movie updatedMovie) {
+        var movie = _movieContext.movies.FirstOrDefault(movie => movie.Id == id);
+
+        if (movie == null) {
+            return NotFound();
+        }
+        
+        movie.Title = updatedMovie.Title;
+        movie.Director = updatedMovie.Director;
+        movie.Genre = updatedMovie.Director;
+        movie.Duration = updatedMovie.Duration;
+
+        _movieContext.SaveChanges();
+
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult deleteMovie(int id) {
+        var movie = _movieContext.movies.FirstOrDefault(movie => movie.Id == id);
+        
+        if (movie == null) {
+            return NotFound();
+        }
+
+        _movieContext.Remove(movie);
+        _movieContext.SaveChanges();
+
+        return NoContent();
+    }
 }

@@ -17,10 +17,10 @@ public class Movie
     [Required]
     public int Id { get; set; }
     [Required(ErrorMessage = "Title cannot be empty")]
-    public string Title { get; private set; }
+    public string Title { get; set; }
     [Required(ErrorMessage = "Director cannot be empty")]
-    public string Director { get; private set; }
-    public string Genre { get; private set; }
+    public string Director { get; set; }
+    public string Genre { get; set; }
     [Range(1, 400, ErrorMessage = "Duration should between 1 a 400 minutes")]
-    public int Duration { get; private set; }
+    public int Duration { get; set; }
 }
