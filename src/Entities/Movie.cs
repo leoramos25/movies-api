@@ -4,14 +4,16 @@ namespace src.Entities;
 
 public class Movie
 {
-    public Movie(string title, string director, string genre, int duration)
+    public Movie(int id, string title, string director, string genre, int duration)
     {
+        Id = id;
         Title = title;
         Director = director;
         Genre = genre;
         Duration = duration;
     }
 
+    public int Id { get; set; }
     [Required(ErrorMessage = "Title cannot be empty")]
     public string Title { get; private set; }
     [Required(ErrorMessage = "Director cannot be empty")]

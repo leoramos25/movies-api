@@ -7,12 +7,33 @@ namespace src.Controllers;
 [Route("movies")]
 public class MovieController : ControllerBase
 {
-    private static List<Movie> movies = new List<Movie>();
+    private static List<Movie> _movies = new List<Movie>();
+    private static int id = 1;
 
     [HttpPost]
-    public void createMovie([FromBody] Movie movie)
+    public IActionResult createMovie([FromBody] Movie movie)
     {
-        movies.Add(movie);
-        Console.WriteLine(movie.Title);
+        movie.Id = id++;
+        _movies.Add(movie);
+        return CreatedAtAction(nameof(findMovieById), new { id = movie.Id}, movie);
+    }
+
+    [HttpGet]
+    public IActionResult findAllMovies()
+    {
+        return Ok(_movies);
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult findMovieById(int id)
+    {
+        var movie = _movies.FirstOrDefault(movie => movie.Id == id);
+
+        if (movie != null)
+        {
+            Ok(movie);
+        }
+
+        return NotFound();
     }
 }
