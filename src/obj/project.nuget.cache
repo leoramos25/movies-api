@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ICcqB1vvbMuKPr4I57sF+TckuO1il4wUiKRLC+tTr80V945Ag6QOIx8D7bkE9zzz1VyFRmmo4ZozDvjJtrEY9A==",
+  "dgSpecHash": "LIHxDZBZPjmzrWzn7A2K9CaFD08d6yNPQ3og82mCS+MmIwu8s6ZYSKHu86eIPRsxuJ4vyGmX55klOxNhdo+BoQ==",
   "success": true,
-  "projectFilePath": "/home/leonardords/myProjects/alura-csharp/alura-csharp.csproj",
+  "projectFilePath": "/home/leonardords/myProjects/movies-api/src/alura-csharp.csproj",
   "expectedPackageFiles": [
     "/home/leonardords/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/leonardords/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",

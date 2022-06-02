@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/leonardords/myProjects/alura-csharp/alura-csharp.csproj",
+      "projectUniqueName": "/home/leonardords/myProjects/movies-api/src/alura-csharp.csproj",
       "projectName": "alura-csharp",
-      "projectPath": "/home/leonardords/myProjects/alura-csharp/alura-csharp.csproj",
+      "projectPath": "/home/leonardords/myProjects/movies-api/src/alura-csharp.csproj",
       "packagesPath": "/home/leonardords/.nuget/packages/",
-      "outputPath": "/home/leonardords/myProjects/alura-csharp/obj/",
+      "outputPath": "/home/leonardords/myProjects/movies-api/src/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/leonardords/.nuget/NuGet/NuGet.Config"
