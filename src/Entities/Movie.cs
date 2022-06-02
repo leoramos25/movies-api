@@ -13,6 +13,8 @@ public class Movie
         Duration = duration;
     }
 
+    [Key]
+    [Required]
     public int Id { get; set; }
     [Required(ErrorMessage = "Title cannot be empty")]
     public string Title { get; private set; }
