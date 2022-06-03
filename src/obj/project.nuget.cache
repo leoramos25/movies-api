@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "P2NFtpDz1dBMqYWrBSGu+uCfDpDrfRQ8sMZFilqHmMO8BdhuxqXE+0Ib17YhpxJxO+BMZyft08GEonZa0Ct6RA==",
+  "dgSpecHash": "utS9XN6sy50AFji0BaUCs4V2Jro71XKSBiK+F890hL/YKM7AHwMqaNsE8wAFTjm+wgLIsj+hERzA0armI56wYQ==",
   "success": true,
   "projectFilePath": "/home/leonardords/myProjects/movies-api/src/alura-csharp.csproj",
   "expectedPackageFiles": [
+    "/home/leonardords/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/home/leonardords/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "/home/leonardords/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/home/leonardords/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/leonardords/.nuget/packages/microsoft.entityframeworkcore/6.0.5/microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
     "/home/leonardords/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.5/microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",
     "/home/leonardords/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.5/microsoft.entityframeworkcore.analyzers.6.0.5.nupkg.sha512",
@@ -30,6 +33,7 @@
     "/home/leonardords/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "/home/leonardords/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/home/leonardords/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "/home/leonardords/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
     "/home/leonardords/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

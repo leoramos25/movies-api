@@ -10,7 +10,7 @@ using src.Database;
 
 namespace alura_csharp.Migrations
 {
-    [DbContext(typeof(MovieContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20220602205244_MovieMigration")]
     partial class MovieMigration
     {

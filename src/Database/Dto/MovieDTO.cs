@@ -2,9 +2,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace src.Dto;
 
-public class CreateMovieDTO
+public class MovieDTO
 {
-    public CreateMovieDTO(string title, string director, string genre, int duration)
+    public MovieDTO(string title, string director, string genre, int duration)
     {
         Title = title;
         Director = director;
@@ -19,4 +19,19 @@ public class CreateMovieDTO
     public string Genre { get; set; }
     [Range(1, 400, ErrorMessage = "Duration should between 1 a 400 minutes")]
     public int Duration { get; set; }
+
+    public override bool Equals(object? obj)
+    {
+        return base.Equals(obj);
+    }
+
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
+    }
+
+    public override string? ToString()
+    {
+        return base.ToString();
+    }
 }
